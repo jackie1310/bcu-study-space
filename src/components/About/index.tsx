@@ -1,5 +1,5 @@
-export default function AboutComponent() {
+export default function AboutComponent () {
     return (
-        <div>About</div>
+        <div className="text-white">About</div>
     )
 }

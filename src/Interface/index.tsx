@@ -1,4 +1,4 @@
-export interface Button {
+export interface ButtonModel {
     btnClass?: string,
     title: string,
     onClick?: () => void
@@ -18,13 +18,13 @@ export interface ArrayType {
     includes: Function
 }
 
-export interface FileFrame {
+export interface FileModel {
     fileLink: string,
     fileName: string,
     fileId: string
 }
 
-export interface FolderFrame {
+export interface Folder {
     folderName: string,
     folderId: string,
 }
@@ -36,4 +36,16 @@ export interface FolderModel {
 export interface AdminModel {
     email: string,
     name: string
+}
+
+export interface LinkProps {
+    label: string, 
+    url: string,
+    active: Boolean
+}
+
+export interface UserProps {
+    currentUser: any,
+    userLoggedIn: Boolean,
+    loading: Boolean,
 }

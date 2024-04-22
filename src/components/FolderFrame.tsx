@@ -1,19 +1,19 @@
 import { deleteFolder } from '@/API/DeleteFolder';
 import { updateFolder } from '@/API/UpdateFolder';
-import { FolderFrame} from '@/Interface'
+import { Folder} from '@/Interface'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react';
 import Button from './common/Button';
 import { useSelector } from 'react-redux';
 
-export default function FolderFrame({folderId, folderName}: FolderFrame) {
+export default function FolderFrame({folderId, folderName}: Folder) {
     const router = useRouter();
     const [edit, setEdit] = useState<boolean>(false);
     const [newName, setNewName] = useState<string>(folderName);
     
     const authAdmin = useSelector((state: any) => state.authAdmin.status);
 
-    const payload: FolderFrame = {
+    const payload: Folder = {
         folderId: folderId,
         folderName: newName
     }
@@ -26,7 +26,7 @@ export default function FolderFrame({folderId, folderName}: FolderFrame) {
 
     return (
         <div className='w-full flex items-center hover:bg-primary hover:bg-opacity-40 text-white justify-start px-8 py-2 rounded-md border-b border-primary'>
-            <button className='flex gap-5 items-center w-5/6' onClick={() => router.push(`/folder?id=${folderId}`)} disabled={edit}>
+            <button className='flex gap-5 items-center w-5/6' onClick={() => router.push(`/files/folder?id=${folderId}`)} disabled={edit}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6 text-yellow-400"><path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z">
                     </path>
                 </svg>

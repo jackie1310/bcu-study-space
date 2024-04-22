@@ -1,9 +1,9 @@
 import { deletingFile } from '@/API/DeleteFile';
-import { FileFrame } from '@/Interface'
+import { FileModel } from '@/Interface'
 import React from 'react'
 import { useSelector } from 'react-redux';
 
-export default function FileFrame({fileLink, fileName, fileId} : FileFrame) {
+export default function FileFrame({fileLink, fileName, fileId} : FileModel) {
     const openFile = (fileLink: string) => {
         window.open(fileLink);
     }

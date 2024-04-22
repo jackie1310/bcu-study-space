@@ -6,7 +6,7 @@ import CommonProgress from '../common/Progress';
 import { addFolder } from '@/API/Firestore';
 import { FolderModel } from '@/Interface';
 import { fetchAdmins } from '@/hooks/fetchAdmins';
-import { useFetchSession } from '@/hooks/useSession';
+// import { useFetchSession } from '@/hooks/useSession';
 import { useSelector } from 'react-redux';
 
 export default function UploadFiles({parentId}: FolderModel) {
