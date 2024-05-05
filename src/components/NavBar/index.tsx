@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 export default function NavBar() {
     const router = useRouter();
     return (
-        <div className="absolute top-4 left-[650px] text-white z-10">
+        <div className="absolute top-4 left-[650px] text-white z-30">
             <ul className="flex items-center justify-center gap-10 text-xl">
                 <NavLink label="Home" url="/" active={router.pathname === "/"}/>
                 <NavLink label="About" url="/about" active={router.pathname.includes("about")}/>
