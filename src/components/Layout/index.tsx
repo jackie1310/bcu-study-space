@@ -1,4 +1,3 @@
-import Hero from "../About/main/Hero";
 import NavBar from "../NavBar";
 import Topbar from "../Topbar";
 import StarsCanvas from "@/components/StarCanvas";
@@ -11,7 +10,7 @@ export default function Layout ({children}: any) {
         >
             <Topbar/>
             <NavBar/>
-            <Hero/>
+            {/* <Hero/> */}
             {children}
         </main>
     )
