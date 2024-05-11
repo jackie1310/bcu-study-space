@@ -14,7 +14,6 @@ import Weather from '../Objects/Weather';
 import Drone from '../Objects/Drone';
 import Wave from '../Objects/Wave';
 import Blob from '../Objects/Blob';
-// import Hero from '../Hero';
 
 export default function HomeComponent() {
     const authAdmin = useSelector((state: any) => state.authAdmin.status);
