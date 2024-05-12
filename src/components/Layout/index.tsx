@@ -1,4 +1,5 @@
-import Hero from "../About/main/Hero";
+
+import HeroContent from "../Hero/HeroContent";
 import NavBar from "../NavBar";
 import Topbar from "../Topbar";
 
@@ -10,10 +11,7 @@ export default function Layout ({children}: any) {
         >
             <Topbar/>
             <NavBar/>
-<<<<<<< HEAD
-=======
-            <Hero/>
->>>>>>> parent of 3931c73 (third change)
+            <HeroContent/>
             {children}
         </main>
     )
