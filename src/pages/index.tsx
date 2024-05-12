@@ -13,6 +13,8 @@ import NavBar from "@/components/NavBar";
 import Layout from "@/components/Layout";
 import { UserProps } from "@/Interface";
 import { useAuth } from "@/contexts/authContext";
+// import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   let {admins} = fetchAdmins();
@@ -41,6 +43,7 @@ export default function Home() {
       </main> */}
       <Layout>
         <HomeComponent/>
+        <Footer/>
       </Layout>
     </>
   );

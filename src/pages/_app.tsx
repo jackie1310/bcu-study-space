@@ -29,7 +29,7 @@ const MyApp: AppType = ({
         <main className={`font-jersey font-normal ${inter.variable}`}>
           <Component {...pageProps} />
         </main>
-        <Footer/>
+        {/* <Footer/> */}
         <Toaster richColors/>
       </Provider>
     </AuthProvider>
