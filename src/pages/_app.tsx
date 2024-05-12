@@ -7,7 +7,7 @@ import { store } from "@/redux/configstore";
 import Head from "next/head";
 import AuthProvider from "@/contexts/authContext";
 import { Toaster } from "sonner";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,7 +29,6 @@ const MyApp: AppType = ({
         <main className={`font-jersey font-normal ${inter.variable}`}>
           <Component {...pageProps} />
         </main>
-        {/* <Footer/> */}
         <Toaster richColors/>
       </Provider>
     </AuthProvider>
