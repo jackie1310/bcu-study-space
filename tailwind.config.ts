@@ -1,6 +1,13 @@
 import { type Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
+module.exports = {
+  //...
+  plugins: [
+    require('daisyui'),
+  ],
+}
+
 export default {
   content: ["./src/**/*.tsx"],
   theme: {
